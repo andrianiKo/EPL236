@@ -34,22 +34,30 @@ public class SharesDP {
 			}
 		}
 
-//		System.out.println("buy day:"+ (buyDay+1));
-//		System.out.println("sell day:"+(selDay+1) + "\nprofit:" + max);
+		if(max!=0){
+			System.out.println("Buy day: "+ (buyDay+1));
+			System.out.println("Sell day:"+(selDay+1) + "\nProfit:  " + max*1000);
+		} else 
+			System.out.println("There is no profit.");
 		return System.nanoTime()-start;
 		
 	}
 
 	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 		// TODO Auto-generated method stub
-		int n =16; // how many days
-		int []p=new int[n]; // value of the shares for each of the n days
-		for (int i=0; i<n; i++){
-			p[i]=(int)Math.random()*50;
+		for (int k=1; k<=16; k++){
+			int []p=new int[k]; // value of the shares for each of the n days
+			System.out.print("Input of size "+k+": ");
+			for (int i=0; i<k; i++){
+				p[i]=(int)(Math.random()*50+1);
+				System.out.print(p[i]+" ");
+			}
+			System.out.println();
+			int opt[]=new int[k]; // maximum possible profit for each of the n days
+			findProfit(opt, p);
 		}
-		int opt[]=new int[n]; // maximum possible profit for each of the n days
-		findProfit(opt, p);
 		
+		/** Code to run the experiment **/
 //		PrintWriter writer = new PrintWriter("ex22.txt", "UTF-8");
 //		double duration; 
 //		Double sumSameTable[]=new Double[10];
