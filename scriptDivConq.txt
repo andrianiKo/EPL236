@@ -1,0 +1,41 @@
+Script started on Wed 02 May 2018 11:50:01 AM EEST
+[?1034hb103ws32:/home/students/cs/2016/anikod01>javac Shares.java
+Note: Shares.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+b103ws32:/home/students/cs/2016/anikod01>java Shares
+1 is not a power of two.
+Input of size 2: 22 36 
+Buy day:1
+Sell day: 2
+Profit:14000
+Time in ms:0.01319
+3 is not a power of two.
+Input of size 4: 4 25 22 4 
+Buy day:1
+Sell day: 2
+Profit:21000
+Time in ms:0.30580
+5 is not a power of two.
+6 is not a power of two.
+7 is not a power of two.
+Input of size 8: 35 35 8 24 34 13 23 36 
+Buy day:3
+Sell day: 8
+Profit:28000
+Time in ms:0.05502
+9 is not a power of two.
+10 is not a power of two.
+11 is not a power of two.
+12 is not a power of two.
+13 is not a power of two.
+14 is not a power of two.
+15 is not a power of two.
+Input of size 16: 10 16 18 1 29 28 20 19 30 4 7 18 36 46 36 8 
+Buy day:4
+Sell day: 14
+Profit:45000
+Time in ms:0.16351
+b103ws32:/home/students/cs/2016/anikod01>exit
+exit
+
+Script done on Wed 02 May 2018 11:50:20 AM EEST
